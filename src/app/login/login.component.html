@@ -1,0 +1,13 @@
+<div class="card"><form (ngSubmit)="OnSubmit(f)" #f="ngForm">
+    <label>Name : </label>
+  <input type="text" required ngModel name="name" (change)="check()"/> <br />
+  <span [ngClass]="span? 'n_avail': 'avail'" >{{status}}</span>
+  <br />  <br />
+  <label>Email : </label>
+ <input type="email" required email ngModel name="email" (change)="checkE()"/> <br />
+ <span [ngClass]="spanE? 'n_avail': 'avail'" >{{statusE}}</span>
+
+  <br />  <br />
+  <button type="submit" #b customDirective on-mouseenter="onmouseup()">click me</button>
+</form>
+</div>

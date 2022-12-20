@@ -1,0 +1,35 @@
+input.ng-invalid.ng-touched{
+  
+   border: sold red 1px;
+}
+input{
+
+    background-color: #d9edfb;
+    border: 1px solid rgb(130, 169, 248);
+}
+.n_avail{
+    color: red;
+}
+.avail{
+    color: rgb(40, 220, 61);
+}
+.card{
+    height: 200px;
+    width: 350px;
+    border: 1px solid grayscale($color: #2e2929);
+    border-radius: 5px;
+    background-color: #bcdef7;
+    padding: 40px;
+    position: relative;
+    top:200px;
+    left: 430px;
+}
+button{
+    border-radius: 14px;
+    border: 1px solid white;
+    background-color: #135e93;
+    color: #d9edfb;
+    width: 80px;
+    height: 25px;
+    
+}

@@ -1,0 +1,23 @@
+<!-- <p-sidebar [(visible)]="visibleSidebar1" [style]="{width:'15em',height:'40em'}" [baseZIndex]="1000">
+    <h1 style="font-weight:normal">Left Sidebar</h1>
+   
+</p-sidebar>
+<p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></p-button> -->
+<div class="container" [routerLink]="['/detailposts']" [fragment]="title">
+  <p-card
+    *ngFor="let post of tutorials; let i = index"
+    [class.active]="i == currentIndex"
+    (click)="setActiveTutorial(post, i)"
+    header="{{ post.title }}"
+    subheader="{{ post.time }}"
+    class="card"
+    styleClass="p-card-shadow"
+  >
+    <ng-template pTemplate="header">
+      <!-- <img alt="Card" src="assets/usercard.png"> -->
+    </ng-template>
+    <!-- {{trim}} -->
+    <div [innerHTML]="post.short" [id]="post.title"></div>
+    <!-- <p *ngFor="let para of post.article; let i = index;">{{para}}</p> -->
+  </p-card>
+</div>

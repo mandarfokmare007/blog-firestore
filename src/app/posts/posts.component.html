@@ -1,0 +1,15 @@
+<div class="container" *ngFor="let post of tutorials">
+  <h2>{{ post.title }}</h2>
+  <h5>{{ post.time }}</h5>
+  <p-scrollPanel [style]="{ width: '100%', height: '450px' }">
+    <p [innerHTML]="post.article"></p>
+  </p-scrollPanel>
+  <!-- <button
+    pButton
+    pRipple
+    type="button"
+    label="Post"
+    (click)=""
+    class="p-button-outlined p-button-sm p-button-rounded"
+  ></button> -->
+</div>

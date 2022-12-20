@@ -1,0 +1,23 @@
+<div class="container">
+  <span class="p-float-label">
+    <input
+      id="float-input"
+      type="text"
+      pInputText
+      class="p-inputtext-sm"
+      [(ngModel)]="title"
+    />
+    <label for="float-input">Title</label> </span
+  ><br />
+  <p-editor [(ngModel)]="article" [style]="{ height: '320px' }"></p-editor
+  ><br />
+  <button
+    pButton
+    pRipple
+    type="button"
+    label="Post"
+    (click)="saveTutorial()"
+    class="p-button-outlined p-button-sm p-button-rounded"
+  ></button
+  ><br /><br />
+</div>

@@ -1,0 +1,12 @@
+.container{
+    margin: 100px;
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: calc(33.33% - 20px);
+   
+} 
